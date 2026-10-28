@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tiberian Skirmish – CnC-style RTS prototype</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="sidebar">
+    <div id="credits">Credits: <span id="creditsVal">0</span></div>
+    <div id="power">Units: <span id="unitCount">0</span></div>
+    <h3>Build</h3>
+    <button id="btnFactory">War Factory<br><small>$<span id="costFactory"></span></small><div class="bar"><div id="barFactory"></div></div></button>
+    <button id="btnTank">Tank<br><small>$<span id="costTank"></span> (needs Factory)</small><div class="bar"><div id="barTank"></div></div></button>
+    <button id="btnHarv">Harvester<br><small>$<span id="costHarv"></span></small><div class="bar"><div id="barHarv"></div></div></button>
+    <canvas id="minimap" width="160" height="160"></canvas>
+    <div id="msg"></div>
+  </div>
+  <div id="overlay" class="hidden">
+    <div id="overlayBox"><h1 id="overlayTitle"></h1><p id="overlaySub"></p><button id="btnRestart">Restart</button></div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

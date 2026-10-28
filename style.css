@@ -1,0 +1,20 @@
+html,body{margin:0;background:#111;color:#cfc;font-family:Consolas,monospace;user-select:none}
+#app{position:relative;display:flex;width:1140px;margin:10px auto}
+#game{background:#000;cursor:crosshair;display:block}
+#sidebar{width:180px;background:#1c2a1c;border-left:2px solid #3a5;padding:8px;box-sizing:border-box}
+#credits{font-size:18px;color:#7f7;margin-bottom:4px}
+#power{font-size:12px;margin-bottom:6px;color:#9b9}
+h3{margin:6px 0;font-size:14px}
+button{width:100%;margin-bottom:6px;background:#2d4a2d;color:#dfd;border:1px solid #4a7;padding:6px;font-family:inherit;cursor:pointer;position:relative;text-align:left}
+button:hover{background:#3b6a3b}
+button:disabled,button.disabled{opacity:.45;cursor:not-allowed}
+button.active{outline:2px solid #ff0}
+.bar{height:5px;background:#142;margin-top:3px}
+.bar div{height:100%;width:0;background:#6f6}
+#minimap{margin-top:8px;background:#000;border:1px solid #4a7;width:160px;height:160px;cursor:pointer}
+#msg{margin-top:8px;font-size:12px;color:#fd6;min-height:48px}
+#overlay{position:absolute;left:0;top:0;width:960px;height:600px;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center}
+#overlay.hidden{display:none}
+#overlayBox{text-align:center}
+#overlayBox h1{font-size:64px;margin:0 0 10px}
+#overlayBox button{width:200px;text-align:center;font-size:18px;padding:10px}
